@@ -1,2 +1,2 @@
 # LERAN
-The code will be available after the paper is accepted.
+The code will be available when the paper is accepted.
