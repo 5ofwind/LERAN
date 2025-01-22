@@ -1,5 +1,3 @@
-The code will be released as soon as possible.
-
 ## LERAN
 D. Li, Y. Zhang and Y. Liu, "Lightweight Efficient Rate-Adaptive Network for Compression-Aware Image Rescaling," IEEE Signal Processing Letters., vol. 32, pp. 1–5, 2025.
 
@@ -12,6 +10,7 @@ Compression-aware image rescaling approaches convert high-resolution images to c
 - Python 3
 - PyTorch
 - NVIDIA GPU + CUDA
+pip install -r requirements.txt
 
 ## For training the stage 1 and stage 2 model, enter the "LERAN_Stage1/codes" and "LERAN_Stage2/codes" respectively, and run
 
@@ -21,7 +20,7 @@ sh train.sh
 
 sh test.sh
 
-## The codes are based on SAIN.
+## The codes are based on SAIN and IRN-finetune-CRM.
 
 ## If you find that our work is useful, please cite:
 
