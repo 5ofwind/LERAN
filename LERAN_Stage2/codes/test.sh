@@ -1,0 +1,1 @@
+python test.py -opt options/test/test_LERAN_Stage2_JPEG_x2.yml -format JPEG
