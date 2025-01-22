@@ -1,6 +1,6 @@
 The code will be released as soon as possible.
 
-## Lightweight Efficient Rate-Adaptive Network for Compression-Aware Image Rescaling
+## LERAN
 D. Li, Y. Zhang and Y. Liu, "Lightweight Efficient Rate-Adaptive Network for Compression-Aware Image Rescaling," IEEE Signal Processing Letters., vol. 32, pp. 1–5, 2025.
 
 https://ieeexplore.ieee.org/document/10843843
