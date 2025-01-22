@@ -1,0 +1,74 @@
+name: LERAN_Stage1_JPEG_x2
+suffix: ~  # add suffix to saved images
+model: LERAN_Stage1
+scale: 2
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [0]
+
+datasets:
+ 
+  test_1: 
+    name: Kodak
+    mode: LQGT
+    dataroot_GT: /hy-tmp/Datasets/kodak/kodak dataset
+
+  test_2:
+    name: Set5
+    mode: LQGT
+    dataroot_GT: /hy-tmp/Datasets/SISR_datasets/Set5/HR
+
+  test_3:
+    name: Set14
+    mode: LQGT
+    dataroot_GT: /hy-tmp/Datasets/SISR_datasets/Set14/HR
+
+  test_4:
+    name: BSD100
+    mode: LQGT
+    dataroot_GT: /hy-tmp/Datasets/SISR_datasets/BSD100/HR
+    
+  test_5:
+    name: Urban100
+    mode: LQGT
+    dataroot_GT: /hy-tmp/Datasets/SISR_datasets/Urban100/HR
+    
+  test_6:
+    name: DIV2K_valid
+    mode: LQGT
+    dataroot_GT: /hy-tmp/Datasets/SISR_datasets/DIV2K/DIV2K_valid_HR
+  
+#### network
+network_G:
+  which_model_G:
+    subnet_type: None
+  in_nc: 3
+  out_nc: 3
+  scale: 2
+  init: xavier
+
+network_G2:
+  which_model_G:
+      subnet_type: None
+  in_nc: 3
+  out_nc: 3
+  scale: 2
+  init: xavier
+  
+train:
+  use_diffcomp: true
+  use_realcomp: true
+  comp_format: JPEG
+  test_val_comp_quality: 85
+  train_comp_quality1: 85
+  train_comp_quality2: 85
+
+#### path
+path:
+  pretrain_model_G: ../experiments/LERAN_Stage1_netG.pth
+  strict_load: true
+  resume_state: ~
+
+path2:
+  pretrain_model_G: ../experiments/LERAN_Stage1_netG2.pth
+  strict_load: true
+  resume_state: ~
