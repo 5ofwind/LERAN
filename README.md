@@ -10,8 +10,7 @@ Compression-aware image rescaling approaches convert high-resolution images to c
 - Python 3
 - PyTorch
 - NVIDIA GPU + CUDA
-- 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ## For training the stage 1 and stage 2 model, enter the "LERAN_Stage1/codes" and "LERAN_Stage2/codes" respectively, and run
 
