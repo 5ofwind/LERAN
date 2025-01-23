@@ -1,5 +1,5 @@
 ## LERAN
-D. Li, Y. Zhang and Y. Liu, "Lightweight Efficient Rate-Adaptive Network for Compression-Aware Image Rescaling," IEEE Signal Processing Letters., vol. 32, pp. 1–5, 2025.
+D. Li, Y. Zhang and Y. Liu, "Lightweight efficient rate-adaptive network for compression-aware image rescaling," IEEE Signal Processing Letters., vol. 32, pp. 1–5, 2025.
 
 https://ieeexplore.ieee.org/document/10843843
 
@@ -26,7 +26,7 @@ sh test.sh
 
 @article{li2025lightweight,
 
-  title={Lightweight Efficient Rate-Adaptive Network for Compression-Aware Image Rescaling},
+  title={Lightweight efficient rate-adaptive network for compression-aware image rescaling},
   
   author={Li, Dingyi and Zhang, Yang and Liu, Yu},
   
